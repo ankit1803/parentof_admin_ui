@@ -1,0 +1,43 @@
+/* app css stylesheet */
+
+.box-header{
+  background: #99cc52 !important;
+  background-color: #99cc52 !important;
+}
+.box-success{
+  border: 1px solid #9bbb59 !important;
+}
+
+.box-title p{
+  margin: 5px 0px;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+.border-top-color{
+  border-top: 2px solid #9bbb59;
+}
+.main-footer{
+  margin-left: 0px;
+}
+
+.btn-danger{
+  background-color: #f96437;
+}
+.btn-success{
+  background-color: #8bbe49;
+}
+<<<<<<< HEAD
+
+.nav-tabs-custom>.nav-tabs>li.active {
+  border-top-color: #99cc52;
+}
+
+.nav-tabs-custom>.nav-tabs>li>a{
+  background-color: #E8E8E8;
+=======
+.pay-btn button{
+  font-size: 10px !important;
+  font-weight: bold !important;
+  margin-right: 3px !important;
+>>>>>>> b57433d930db288f24044680dfc7ef73f82cfaf5
+}

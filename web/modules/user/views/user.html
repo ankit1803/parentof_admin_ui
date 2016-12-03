@@ -1,0 +1,68 @@
+﻿<div data-ng-controller="UserController as ctrl" >
+
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="box">
+                <div class="box-header">
+                    <h3 class="box-title">Users</h3>
+
+                    <div class="box-tools">
+
+                        <div class="input-group input-group-sm" style="width: 300px;">
+                            <div class="input-group-btn" style="padding-right: 10px;">
+                                <button data-ng-click="ctrl.open()"
+                                        class="btn btn-block btn-primary btn-sm">Add User</button>
+                            </div>
+
+                            <input type="text" name="table_search" class="form-control pull-right" placeholder="Search">
+
+                            <div class="input-group-btn">
+                                <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body table-responsive">
+                    <table class="table table-hover">
+                        <tbody><tr>
+                            <th>UserName</th>
+                            <th>FirstName</th>
+                            <th>LastName</th>
+                            <th>Emai</th>
+                            <th>Address</th>
+                            <th>Area</th>
+                            <th>City</th>
+                            <th>State</th>
+                            <th>Country</th>
+                        </tr>
+                        <tr ng-repeat="user in ctrl.users">
+                            <td>{{ user.username }}</td>
+                            <td>{{ user.firstname }}</td>
+                            <td>{{ user.lastname }}</td>
+                            <td>{{ user.email }}</td>
+                            <td>{{ user.address }}</td>
+                            <td>{{ user.area }}</td>
+                            <td>{{ user.city }}</td>
+                            <td>{{ user.state }}</td>
+                            <td>{{ user.country }}</td>
+                            <td>
+                                <button class="btn btn-primary btn-xs" data-title="Edit" data-ng-click="ctrl.edit(user)">
+                                    <span class="glyphicon glyphicon-pencil"></span>
+                                </button>
+                            </td>
+                            <td>
+                                <button class="btn btn-danger btn-xs" data-title="Delete" data-ng-click="ctrl.delete(user)">
+                                    <span class="glyphicon glyphicon-trash"></span>
+                                </button>
+                            </td>
+                        </tr>
+                        </tbody></table>
+                </div>
+                <!-- /.box-body -->
+            </div>
+            <!-- /.box -->
+        </div>
+    </div>
+
+</div>

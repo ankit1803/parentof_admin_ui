@@ -1,6 +1,6 @@
 ﻿'use strict';
 
-var auth_module = angular.module('auth', [ 'restangular', 'ngCookies' ]);
+var auth_module = angular.module('auth_module', [ 'restangular', 'ngCookies' ]);
 
 //auth_module.config(ConfigHelper);
 
